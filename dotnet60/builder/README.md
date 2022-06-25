@@ -125,9 +125,9 @@ fission env list
 fission fn list
  ```
  Create Environment with builder (choose a unique which doesn't exist , here we have chosen : dotnetcorewithnuget  ) 
- also suppose the builder image name is fissiondotnet20-builder and hosted on dockerhub as fission/dotnet20-builder
+ also suppose the builder image name is fissiondotnet60-builder and hosted on dockerhub as fission/dotnet60-builder
  ```
-fission environment create --name dotnetcorewithnuget --image fission/dotnet20-env  --builder  fission/dotnet20-builder
+fission environment create --name dotnetcorewithnuget --image fission/dotnet60-env  --builder  fission/dotnet60-builder
  ```
  Verify fission-builder and fission-function namespace for new pods (pods name beginning with env name which we have given like *dotnetcorewithnuget-xxx-xxx*)
  ```

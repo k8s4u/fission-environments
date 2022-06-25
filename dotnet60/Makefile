@@ -3,6 +3,6 @@ PLATFORMS ?= linux/amd64
 -include ../rules.mk
 
 .PHONY: all
-all: dotnet20-builder dotnet20-env-img
+all: dotnet60-builder dotnet60-env-img
 
-dotnet20-env-img: Dockerfile
+dotnet60-env-img: Dockerfile

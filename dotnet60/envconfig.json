@@ -1,9 +1,9 @@
 [
   {
-    "builder": "dotnet20-builder",
-    "examples": "https://github.com/fission/environments/tree/master/dotnet20/examples",
+    "builder": "dotnet60-builder",
+    "examples": "https://github.com/fission/environments/tree/master/dotnet60/examples",
     "icon": "./logo/logo_NETcore.svg",
-    "image": "dotnet20-env",
+    "image": "dotnet60-env",
     "keywords": [],
     "kind": "environment",
     "maintainers": [
@@ -21,7 +21,7 @@
       }
     ],
     "name": "Dotnet 2 Environment",
-    "readme": "https://github.com/fission/environments/tree/master/dotnet20",
+    "readme": "https://github.com/fission/environments/tree/master/dotnet60",
     "runtimeVersion": "2.0.0",
     "shortDescription": "Fission Dotnet 2.0.0 runtime uses Kestrel with Nancy to host the internal web server and uses Roslyn to compile the uploaded code.",
     "status": "Stable",

@@ -2,7 +2,7 @@ ARG BUILDER_IMAGE=fission/builder
 FROM ${BUILDER_IMAGE} AS fission-builder
 
 
-FROM microsoft/dotnet:2.0.0-sdk AS builderimage
+FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine AS builderimage
 
 
 WORKDIR /app

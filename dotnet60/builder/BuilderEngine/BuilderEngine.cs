@@ -3,17 +3,14 @@ using Builder.Utility;
 using NugetWorker;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
-using NuGet.Packaging;
 using System.IO;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using System.Reflection;
-using Microsoft.CodeAnalysis.Emit;
-using System.Runtime.Loader;
 using Newtonsoft.Json;
+using Microsoft.CodeAnalysis.Emit;
 
 namespace Builder.Engine
 {
@@ -247,8 +244,8 @@ namespace Builder.Engine
                 dllInfos.AddRange(nugetEngine.dllInfos);
             }
 
-            //now do a distinct of all dlls paths as multiple packaed might have added same dll
-            dllInfos = dllInfos.DistinctBy(x => x.path).ToList();
+            //now do a distinct of all dlls paths as multiple packaged might have added same dll
+            dllInfos = System.Linq.Enumerable.DistinctBy(dllInfos, x => x.path).ToList();
 
 #if DEBUG
             dllInfos.LogDllPathstoCSV("preFilter.CSV");

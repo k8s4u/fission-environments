@@ -3,6 +3,6 @@ PLATFORMS ?= linux/amd64
 -include ../../rules.mk
 
 .PHONY: all
-all: dotnet20-builder-img
+all: dotnet60-builder-img
 
-dotnet20-builder-img: Dockerfile
+dotnet60-builder-img: Dockerfile

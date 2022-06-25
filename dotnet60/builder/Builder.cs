@@ -39,7 +39,7 @@ namespace Builder
                     detailedException= BuilderHelper.Instance.DeepException(ex);
                     Console.WriteLine($"Exception During Build : {Environment.NewLine} {ex.Message} | {ex.StackTrace} | {Environment.NewLine} {detailedException}");
                 }
-                catch(Exception childEx)
+                catch(Exception)
                 {
                     //do nothing , just log orignal exception
                     Console.WriteLine($"{Environment.NewLine} Exception During Build :{ex.Message} |{Environment.NewLine}  {ex.StackTrace} {Environment.NewLine} ");

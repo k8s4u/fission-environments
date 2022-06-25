@@ -4,8 +4,6 @@ using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using Nancy;
-using Newtonsoft.Json;
-
 
 namespace Fission.DotNetCore.Api
 {

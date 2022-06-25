@@ -32,7 +32,7 @@ public class FissionFunction {
 ```
 
 Please see examples below, or if you are looking for ready-to-run examples, see 
-the [DotNet20 examples directory](../../examples/dotnet20).
+the [dotnet60 examples directory](../../examples/dotnet60).
 
 ## Rebuilding and pushing the image
 
@@ -44,7 +44,7 @@ in order to support multi-stage builds feature.
 Move to the directory containing the source and start the container build process:
 
 ```
-docker build -t USER/dotnet20-env .
+docker build -t USER/dotnet60-env .
 ```
 
 After the build finishes push the new image to a Docker registry using the 
@@ -78,7 +78,7 @@ public class FissionFunction
 Lastly to run the example:
 
 ```
-$ fission env create --name dotnet --image fission/dotnet20-env
+$ fission env create --name dotnet --image fission/dotnet60-env
 
 $ fission function create --name echo --env dotnet --code /tmp/func.cs
 
@@ -117,7 +117,7 @@ public class FissionFunction
 Lastly to run the example:
 
 ```
-$ fission env create --name dotnet --image fission/dotnet20-env
+$ fission env create --name dotnet --image fission/dotnet60-env
 
 $ fission function create --name addition --env dotnet --code /tmp/func.cs
 
@@ -163,7 +163,7 @@ public class FissionFunction
 Lastly to run the example:
 
 ```
-$ fission env create --name dotnet --image fission/dotnet20-env
+$ fission env create --name dotnet --image fission/dotnet60-env
 
 $ fission function create --name httpinfo --env dotnet --code /tmp/func.cs
 
@@ -223,7 +223,7 @@ public class Person
 Lastly to run the example:
 
 ```
-$ fission env create --name dotnet --image fission/dotnet20-env
+$ fission env create --name dotnet --image fission/dotnet60-env
 
 $ fission function create --name httpbody --env dotnet --code /tmp/func.cs
 
@@ -360,5 +360,5 @@ namespace FuncNameSpace
 ```
 **3. Nuget support :**
 
-with use of fission builder we can now add various compatible nugets with our deployment package so that it can be leverage via our function  code. Please go through detailed documentation of [fission builder for dotnet 2.0 environment](https://github.com/fission/fission/tree/master/environments/dotnet20/builder).
+with use of fission builder we can now add various compatible nugets with our deployment package so that it can be leverage via our function  code. Please go through detailed documentation of [fission builder for dotnet 2.0 environment](https://github.com/fission/fission/tree/master/environments/dotnet60/builder).
  
